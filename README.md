@@ -21,9 +21,7 @@ This application demonstrates the following DevExpress MVVM Framework concepts:
 
 The **MVVM Best Practices** demo includes a module with a step-by-step guide on how to create this application.
 
-If you have the DevExpress Demo Center of version 20.1 or newer installed, use this DXDemo-link to run **Walkthough** module:
-
-> [dxdemo://Win/MVVM/MainDemo/TodoAppGuide](dxdemo://Win/MVVM/MainDemo/TodoAppGuide)
+If you have the DevExpress Demo Center of version 20.1 or newer installed, refer to the foolowing topic for step-by-step tutorials: [WinForms MVVM - Step-by-Step Tutorials](https://docs.devexpress.com/WindowsForms/113955/build-an-application/winforms-mvvm#step-by-step-tutorials).
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
 
