@@ -1,15 +1,16 @@
 Namespace TodoApp.Views
+
     Partial Class ItemsView
+
         ''' <summary> 
         ''' Required designer variable.
         ''' </summary>
         Private components As System.ComponentModel.IContainer = Nothing
 
-
         ''' <summary> 
         ''' Clean up any resources being used.
         ''' </summary>
-        ''' <paramname="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
             If disposing AndAlso (Me.components IsNot Nothing) Then
                 Me.components.Dispose()
@@ -18,9 +19,7 @@ Namespace TodoApp.Views
             MyBase.Dispose(disposing)
         End Sub
 
-
 #Region "Component Designer generated code"
-
         ''' <summary> 
         ''' Required method for Designer support - do not modify 
         ''' the contents of this method with the code editor.
@@ -63,7 +62,7 @@ Namespace TodoApp.Views
             simpleContextButton1.AlignmentOptions.Panel = DevExpress.Utils.ContextItemPanel.Center
             simpleContextButton1.AlignmentOptions.Position = DevExpress.Utils.ContextItemPosition.Near
             simpleContextButton1.Id = New System.Guid("07615a42-60b8-4284-bc4c-d14067d2e65e")
-            simpleContextButton1.ImageOptionsCollection.ItemNormal.SvgImage = Global.Resources.Unchecked
+            simpleContextButton1.ImageOptionsCollection.ItemNormal.SvgImage = TodoApp.Properties.Resources.Unchecked
             simpleContextButton1.ImageOptionsCollection.ItemNormal.SvgImageSize = New System.Drawing.Size(32, 32)
             simpleContextButton1.Name = "btnCheck"
             simpleContextButton1.Padding = New System.Windows.Forms.Padding(16)
@@ -96,7 +95,7 @@ Namespace TodoApp.Views
             templatedItemElement3.FieldName = "IsCompleted"
             templatedItemElement3.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleLeft
             templatedItemElement3.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.NoScale
-            templatedItemElement3.ImageOptions.SvgImage = Global.Resources.Checked
+            templatedItemElement3.ImageOptions.SvgImage = TodoApp.Properties.Resources.Checked
             templatedItemElement3.ImageOptions.SvgImageSize = New System.Drawing.Size(32, 32)
             templatedItemElement3.Text = "IsCompleted"
             templatedItemElement3.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter
@@ -192,7 +191,7 @@ Namespace TodoApp.Views
             Me.btnNew.AutoSize = True
             Me.headerPane.SetColumn(Me.btnNew, 1)
             Me.btnNew.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.btnNew.ImageOptions.SvgImage = Global.Resources._New
+            Me.btnNew.ImageOptions.SvgImage = TodoApp.Properties.Resources.[New]
             Me.btnNew.Location = New System.Drawing.Point(312, 0)
             Me.btnNew.Margin = New System.Windows.Forms.Padding(0)
             Me.btnNew.Name = "btnNew"
@@ -238,15 +237,22 @@ Namespace TodoApp.Views
         End Sub
 
 #End Region
-
         Private listBoxControl As DevExpress.XtraEditors.ListBoxControl
+
         Private searchControl As DevExpress.XtraEditors.SearchControl
+
         Private todoItemBindingSource As System.Windows.Forms.BindingSource
+
         Private titleLabel As DevExpress.XtraEditors.LabelControl
+
         Private mvvmContext As DevExpress.Utils.MVVM.MVVMContext
+
         Private toggleShowAll As DevExpress.XtraEditors.ToggleSwitch
+
         Private footerPane As DevExpress.Utils.Layout.TablePanel
+
         Private headerPane As DevExpress.Utils.Layout.TablePanel
+
         Private btnNew As DevExpress.XtraEditors.SimpleButton
     End Class
 End Namespace

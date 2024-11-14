@@ -2,8 +2,10 @@ Imports DevExpress.XtraEditors
 Imports TodoApp.ViewModels
 
 Namespace TodoApp
+
     Public Partial Class MainView
         Inherits XtraForm
+
         Public Sub New()
             InitializeComponent()
             ' Initializing bindings only at runtime  
@@ -12,7 +14,8 @@ Namespace TodoApp
                 InitializeBindings()
             End If
         End Sub
-        Sub InitializeNavigation()
+
+        Private Sub InitializeNavigation()
             ' creating the NavigationFrame as INavigationService
             Dim navigationService = DevExpress.Utils.MVVM.Services.NavigationService.Create(navigationFrame)
             ' registering the service instance
@@ -20,11 +23,10 @@ Namespace TodoApp
             ' Initialize the Fluent API
             Dim fluent = mvvmContext.OfType(Of AppViewModel)()
             ' Bind the OnShown command to the Shown event
-#Disable Warning
-            fluent.WithEvent(Me, "Shown").EventToCommand(Sub(x) x.OnShown())
-#Enable Warning Warning
+            fluent.WithEvent(CObj(Me), CStr("Shown")).EventToCommand(Function(x) AddressOf x.OnShown)
         End Sub
-        Sub InitializeBindings()
+
+        Private Sub InitializeBindings()
             ' Initialize the Fluent API
             Dim fluent = mvvmContext.OfType(Of AppViewModel)()
             ' Bind the Title property to the Text

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+    <ProjectGuid>{317FE9BC-6687-071D-165C-E6908AECCDAD}</ProjectGuid>
+    <EnableDefaultItems>False</EnableDefaultItems>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>True</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <Configurations>Debug;Release;DebugTest</Configurations>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+    <EmbeddedResourceUseDependentUponConvention>False</EmbeddedResourceUseDependentUponConvention>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>TodoApp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <OutputType>WinExe</OutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\DebugNetCoreDesktop\</OutputPath>
+    <DefineConstants>DEBUG,TRACE,DXCORE3,</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\ReleaseNetCoreDesktop\</OutputPath>
+    <DefineConstants>TRACE,DXCORE3,</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v20.2" />
+    <Reference Include="DevExpress.Data.v20.2" />
+    <Reference Include="DevExpress.Mvvm.v20.2" />
+    <Reference Include="DevExpress.Printing.v20.2.Core" />
+    <Reference Include="DevExpress.Utils.v20.2" />
+    <Reference Include="DevExpress.XtraBars.v20.2" />
+    <Reference Include="DevExpress.XtraEditors.v20.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\AppModel.vb" />
+    <Compile Include="Data\IRepository.vb" />
+    <Compile Include="Messages\ReloadRequired.vb" />
+    <Compile Include="Data\InMemory.vb" />
+    <Compile Include="Properties\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\AppViewModel.vb" />
+    <Compile Include="ViewModels\ItemViewModel.vb" />
+    <Compile Include="ViewModels\AppLogoViewModel.vb" />
+    <Compile Include="Views\AppLogo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\AppLogo.Designer.vb">
+      <DependentUpon>AppLogo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ItemView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ItemView.Designer.vb">
+      <DependentUpon>ItemView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainView.Designer.vb">
+      <DependentUpon>MainView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TodoItem.vb" />
+    <Compile Include="Program.vb" />
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <Compile Include="ViewModels\ItemsViewModel.vb" />
+    <Compile Include="Views\ItemsView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ItemsView.Designer.vb">
+      <DependentUpon>ItemsView.vb</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\AppLogo.resx">
+      <DependentUpon>AppLogo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ItemView.resx">
+      <DependentUpon>ItemView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainView.resx">
+      <DependentUpon>MainView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>TodoApp.Properties</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ItemsView.resx">
+      <DependentUpon>ItemsView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Unchecked.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Checked.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Back.svg" />
+    <EmbeddedResource Include="Assets\Delete.svg" />
+    <EmbeddedResource Include="Assets\New.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Save.svg" />
+  </ItemGroup>
+</Project>

@@ -1,15 +1,16 @@
 Namespace TodoApp.Views
+
     Partial Class ItemView
+
         ''' <summary> 
         ''' Required designer variable.
         ''' </summary>
         Private components As System.ComponentModel.IContainer = Nothing
 
-
         ''' <summary> 
         ''' Clean up any resources being used.
         ''' </summary>
-        ''' <paramname="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
             If disposing AndAlso (Me.components IsNot Nothing) Then
                 Me.components.Dispose()
@@ -18,9 +19,7 @@ Namespace TodoApp.Views
             MyBase.Dispose(disposing)
         End Sub
 
-
 #Region "Component Designer generated code"
-
         ''' <summary> 
         ''' Required method for Designer support - do not modify 
         ''' the contents of this method with the code editor.
@@ -77,7 +76,7 @@ Namespace TodoApp.Views
             Me.btnBack.AutoSize = True
             Me.headerPane.SetColumn(Me.btnBack, 0)
             Me.btnBack.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.btnBack.ImageOptions.SvgImage = Global.Resources.Back
+            Me.btnBack.ImageOptions.SvgImage = TodoApp.Properties.Resources.Back
             Me.btnBack.Location = New System.Drawing.Point(0, 0)
             Me.btnBack.Margin = New System.Windows.Forms.Padding(0)
             Me.btnBack.Name = "btnBack"
@@ -125,7 +124,7 @@ Namespace TodoApp.Views
             Me.btnDelete.AutoSize = True
             Me.headerPane.SetColumn(Me.btnDelete, 2)
             Me.btnDelete.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.btnDelete.ImageOptions.SvgImage = Global.Resources.Delete
+            Me.btnDelete.ImageOptions.SvgImage = TodoApp.Properties.Resources.Delete
             Me.btnDelete.Location = New System.Drawing.Point(274, 0)
             Me.btnDelete.Margin = New System.Windows.Forms.Padding(0)
             Me.btnDelete.Name = "btnDelete"
@@ -141,7 +140,7 @@ Namespace TodoApp.Views
             Me.btnSave.AutoSize = True
             Me.headerPane.SetColumn(Me.btnSave, 3)
             Me.btnSave.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.btnSave.ImageOptions.SvgImage = Global.Resources.Save
+            Me.btnSave.ImageOptions.SvgImage = TodoApp.Properties.Resources.Save
             Me.btnSave.Location = New System.Drawing.Point(312, 0)
             Me.btnSave.Margin = New System.Windows.Forms.Padding(0)
             Me.btnSave.Name = "btnSave"
@@ -284,22 +283,33 @@ Namespace TodoApp.Views
             Me.PerformLayout()
         End Sub
 
-
 #End Region
-
         Private mvvmContext As DevExpress.Utils.MVVM.MVVMContext
+
         Private headerPane As DevExpress.Utils.Layout.TablePanel
+
         Private btnBack As DevExpress.XtraEditors.SimpleButton
+
         Private titleLabel As DevExpress.XtraEditors.LabelControl
+
         Private footerPane As DevExpress.Utils.Layout.TablePanel
+
         Private btnSave As DevExpress.XtraEditors.SimpleButton
+
         Private btnDelete As DevExpress.XtraEditors.SimpleButton
+
         Private dataPane As DevExpress.Utils.Layout.TablePanel
+
         Private lblDescription As DevExpress.XtraEditors.LabelControl
+
         Private lblTitle As DevExpress.XtraEditors.LabelControl
+
         Private teTitle As DevExpress.XtraEditors.TextEdit
+
         Private teDescription As DevExpress.XtraEditors.MemoEdit
+
         Private todoItemBindingSource As System.Windows.Forms.BindingSource
+
         Private tglCompleted As DevExpress.XtraEditors.ToggleSwitch
     End Class
 End Namespace

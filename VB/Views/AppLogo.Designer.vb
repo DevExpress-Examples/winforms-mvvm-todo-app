@@ -1,15 +1,16 @@
 Namespace TodoApp.Views
+
     Partial Class AppLogo
+
         ''' <summary> 
         ''' Required designer variable.
         ''' </summary>
         Private components As System.ComponentModel.IContainer = Nothing
 
-
         ''' <summary> 
         ''' Clean up any resources being used.
         ''' </summary>
-        ''' <paramname="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
             If disposing AndAlso (Me.components IsNot Nothing) Then
                 Me.components.Dispose()
@@ -18,9 +19,7 @@ Namespace TodoApp.Views
             MyBase.Dispose(disposing)
         End Sub
 
-
 #Region "Component Designer generated code"
-
         ''' <summary> 
         ''' Required method for Designer support - do not modify 
         ''' the contents of this method with the code editor.
@@ -42,7 +41,7 @@ Namespace TodoApp.Views
             Me.greetLabel.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None
             Me.greetLabel.Dock = System.Windows.Forms.DockStyle.Fill
             Me.greetLabel.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.BottomCenter
-            Me.greetLabel.ImageOptions.SvgImage = Global.Resources.Logo
+            Me.greetLabel.ImageOptions.SvgImage = TodoApp.Properties.Resources.Logo
             Me.greetLabel.ImageOptions.SvgImageSize = New System.Drawing.Size(128, 128)
             Me.greetLabel.IndentBetweenImageAndText = 64
             Me.greetLabel.Location = New System.Drawing.Point(0, 0)
@@ -68,10 +67,9 @@ Namespace TodoApp.Views
             Me.ResumeLayout(False)
         End Sub
 
-
 #End Region
-
         Private greetLabel As DevExpress.XtraEditors.LabelControl
+
         Private mvvmContext As DevExpress.Utils.MVVM.MVVMContext
     End Class
 End Namespace

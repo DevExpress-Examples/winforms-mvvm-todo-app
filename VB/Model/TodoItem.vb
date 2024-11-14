@@ -1,7 +1,9 @@
 Imports System.ComponentModel.DataAnnotations
 
 Namespace TodoApp.Model
+
     Public Class TodoItem
+
         Private _Id As Integer
 
         ' Deny direct item creation (available for data storage only)
@@ -15,6 +17,7 @@ Namespace TodoApp.Model
             Get
                 Return _Id
             End Get
+
             Private Set(ByVal value As Integer)
                 _Id = value
             End Set
@@ -22,7 +25,9 @@ Namespace TodoApp.Model
 
         ' Data fields
         Public Property Title As String
+
         Public Property Description As String
+
         Public Property IsCompleted As Boolean
     End Class
 End Namespace

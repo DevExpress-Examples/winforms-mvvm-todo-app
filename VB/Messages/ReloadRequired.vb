@@ -1,8 +1,11 @@
 Imports TodoApp.Model
 
 Namespace TodoApp
+
     Public Class ReloadRequired
+
         Private _Id As Integer, _IsNew As Boolean
+
 #Region "static"
         Public ReadOnly Shared All As ReloadRequired = New ReloadRequired(AppModel.NewItemID, False)
 
@@ -14,7 +17,7 @@ Namespace TodoApp
             Return New ReloadRequired(id, True)
         End Function
 
-#End Region
+#End Region  ' static
         ' Deny direct instances creation
         Private Sub New(ByVal id As Integer, ByVal isNew As Boolean)
             Me.Id = id
@@ -25,6 +28,7 @@ Namespace TodoApp
             Get
                 Return _Id
             End Get
+
             Private Set(ByVal value As Integer)
                 _Id = value
             End Set
@@ -34,6 +38,7 @@ Namespace TodoApp
             Get
                 Return _IsNew
             End Get
+
             Private Set(ByVal value As Boolean)
                 _IsNew = value
             End Set

@@ -1,15 +1,16 @@
 Namespace TodoApp
+
     Partial Class MainView
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
         Private components As System.ComponentModel.IContainer = Nothing
 
-
         ''' <summary>
         ''' Clean up any resources being used.
         ''' </summary>
-        ''' <paramname="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
             If disposing AndAlso (Me.components IsNot Nothing) Then
                 Me.components.Dispose()
@@ -18,9 +19,7 @@ Namespace TodoApp
             MyBase.Dispose(disposing)
         End Sub
 
-
 #Region "Windows Form Designer generated code"
-
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -58,7 +57,7 @@ Namespace TodoApp
             Me.ClientSize = New System.Drawing.Size(398, 468)
             Me.Controls.Add(Me.navigationFrame)
             Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-            Me.IconOptions.SvgImage = Global.Resources.Logo
+            Me.IconOptions.SvgImage = TodoApp.Properties.Resources.Logo
             Me.MaximizeBox = False
             Me.Name = "MainView"
             Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -67,9 +66,9 @@ Namespace TodoApp
             Me.ResumeLayout(False)
         End Sub
 
-
 #End Region
         Private mvvmContext As DevExpress.Utils.MVVM.MVVMContext
+
         Private navigationFrame As DevExpress.XtraBars.Navigation.NavigationFrame
     End Class
 End Namespace

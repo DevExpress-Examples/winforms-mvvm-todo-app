@@ -119,24 +119,24 @@
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Logo.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
+    <value>..\Assets\Logo.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="Checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Checked.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
+    <value>..\Assets\Checked.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="Unchecked" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Unchecked.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
+    <value>..\Assets\Unchecked.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Back.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
+    <value>..\Assets\Back.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="New" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\New.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
+    <value>..\Assets\New.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Delete.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
+    <value>..\Assets\Delete.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Save.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4</value>
+    <value>..\Assets\Save.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>
